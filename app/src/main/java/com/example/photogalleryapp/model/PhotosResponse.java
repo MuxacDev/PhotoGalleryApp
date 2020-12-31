@@ -4,7 +4,7 @@ package com.example.photogalleryapp.model;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Response {
+public class PhotosResponse {
 
     private Photos photos;
     private String stat;

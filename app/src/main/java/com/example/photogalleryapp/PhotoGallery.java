@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import com.example.photogalleryapp.model.Photos;
-import com.example.photogalleryapp.model.Response;
 
 public class PhotoGallery extends AppCompatActivity {
 
@@ -15,6 +14,8 @@ public class PhotoGallery extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gallery_activity);
+
+        //startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
 
         initRecyclerView();
     }

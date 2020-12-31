@@ -1,10 +1,14 @@
 
 package com.example.photogalleryapp.model;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import java.util.HashMap;
 import java.util.Map;
-
+@Entity
 public class Photo {
+
 
     private String id;
     private String owner;
@@ -17,6 +21,7 @@ public class Photo {
     private Integer isfamily;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
+    @PrimaryKey
     public String getId() {
         return id;
     }
