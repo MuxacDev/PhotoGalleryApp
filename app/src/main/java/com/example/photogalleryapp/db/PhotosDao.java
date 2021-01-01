@@ -14,7 +14,7 @@ import java.util.List;
 
 @Dao
 public interface PhotosDao {
-    @Query("SELECT * FROM Photo")
+    @Query("SELECT * FROM photo")
     public List<Photo> LoadAll();
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
